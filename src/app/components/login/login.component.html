@@ -1,0 +1,10 @@
+<form #login="ngForm" (ngSubmit)="onSubmit(login)">
+  <input type="text" placeholder="USERNAME" #user="ngModel" name="user" [(ngModel)]="userAccount.username">
+  <br>
+  <br>
+  <input type="password" placeholder="PASSWORD"  #pwd="ngModel" name="pwd" [(ngModel)]= "userAccount.password" >
+  <br>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+
